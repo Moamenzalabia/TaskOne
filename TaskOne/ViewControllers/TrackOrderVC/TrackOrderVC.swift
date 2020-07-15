@@ -9,22 +9,35 @@
 import UIKit
 
 class TrackOrderVC: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    //MARK:- Outlet's
+//       @IBOutlet weak var passwordView: UIView!
+//       @IBOutlet weak var passwordTxtField: UITextField!
+//       @IBOutlet weak var eyeBtnOutlet: UIButton!
+//       @IBOutlet weak var saveBtnOutlet: UIButton!
+//       @IBOutlet weak var passwordPlaceHolderView: UIView!
+//       @IBOutlet weak var passwordPlaceHolderLbl: UILabel!
+//
+       //MARK:- Propertie's
+       static func instance()-> TrackOrderVC{
+           let story = UIStoryboard(name: "Main", bundle: nil)
+           let vc = story.instantiateViewController(withIdentifier: "TrackOrderVC") as! TrackOrderVC
+           return vc
+       }
+       
+       //MARK:- LifeCycle
+       override func viewDidLoad() {
+           super.viewDidLoad()
+           NavigationBarClear()
+           //setUpUi()
+       }
+       
+       //MARK:- Helper's
+//       func setUpUi(){
+//           passwordView.addCornerRadius(6)
+//           saveBtnOutlet.addCornerRadius(6)
+//       }
+       
+       //MARK:- Action's
 
 }
