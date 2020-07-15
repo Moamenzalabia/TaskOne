@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		1C09335924BF3BCB00712FC2 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C09335824BF3BCB00712FC2 /* UICollectionView+Extensions.swift */; };
 		1C09335B24BF3BFC00712FC2 /* UIView+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C09335A24BF3BFC00712FC2 /* UIView+Extentions.swift */; };
 		1C09335D24BF3D8D00712FC2 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C09335C24BF3D8D00712FC2 /* UIViewController.swift */; };
+		1C09336124BF488D00712FC2 /* OrderStatusCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C09335F24BF488D00712FC2 /* OrderStatusCVCell.swift */; };
+		1C09336224BF488D00712FC2 /* OrderStatusCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C09336024BF488D00712FC2 /* OrderStatusCVCell.xib */; };
 		1C8890B624BDA8E30058F1A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8890B524BDA8E30058F1A0 /* AppDelegate.swift */; };
 		1C8890B824BDA8E30058F1A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8890B724BDA8E30058F1A0 /* SceneDelegate.swift */; };
 		1C8890BA24BDA8E30058F1A0 /* OrderDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8890B924BDA8E30058F1A0 /* OrderDataVC.swift */; };
@@ -29,6 +31,8 @@
 		1C09335824BF3BCB00712FC2 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		1C09335A24BF3BFC00712FC2 /* UIView+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extentions.swift"; sourceTree = "<group>"; };
 		1C09335C24BF3D8D00712FC2 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		1C09335F24BF488D00712FC2 /* OrderStatusCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatusCVCell.swift; sourceTree = "<group>"; };
+		1C09336024BF488D00712FC2 /* OrderStatusCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderStatusCVCell.xib; sourceTree = "<group>"; };
 		1C8890B224BDA8E30058F1A0 /* TaskOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C8890B524BDA8E30058F1A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C8890B724BDA8E30058F1A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,10 +61,20 @@
 		1C09335124BF3AD000712FC2 /* TrackOrderVC */ = {
 			isa = PBXGroup;
 			children = (
+				1C09335E24BF485600712FC2 /* OrderStatusCVCell */,
 				1C09335224BF3AF400712FC2 /* TrackOrderVC.swift */,
 				1C09335424BF3B0F00712FC2 /* TrackOrderVC+Extensions.swift */,
 			);
 			path = TrackOrderVC;
+			sourceTree = "<group>";
+		};
+		1C09335E24BF485600712FC2 /* OrderStatusCVCell */ = {
+			isa = PBXGroup;
+			children = (
+				1C09335F24BF488D00712FC2 /* OrderStatusCVCell.swift */,
+				1C09336024BF488D00712FC2 /* OrderStatusCVCell.xib */,
+			);
+			path = OrderStatusCVCell;
 			sourceTree = "<group>";
 		};
 		1C8890A924BDA8E30058F1A0 = {
@@ -146,7 +160,6 @@
 				FDDF60D121234C9D5BFBB34B /* Pods-TaskOne.debug.xcconfig */,
 				7D58BF8A78E41960290237B8 /* Pods-TaskOne.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -221,6 +234,7 @@
 				1C8890C224BDA8E80058F1A0 /* LaunchScreen.storyboard in Resources */,
 				1C8890BF24BDA8E80058F1A0 /* Assets.xcassets in Resources */,
 				1C8890BD24BDA8E30058F1A0 /* Main.storyboard in Resources */,
+				1C09336224BF488D00712FC2 /* OrderStatusCVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +294,7 @@
 				1C09335524BF3B0F00712FC2 /* TrackOrderVC+Extensions.swift in Sources */,
 				1C8890B824BDA8E30058F1A0 /* SceneDelegate.swift in Sources */,
 				1C09335324BF3AF400712FC2 /* TrackOrderVC.swift in Sources */,
+				1C09336124BF488D00712FC2 /* OrderStatusCVCell.swift in Sources */,
 				1C09335724BF3BB000712FC2 /* UITableView+Extension.swift in Sources */,
 				1C09335B24BF3BFC00712FC2 /* UIView+Extentions.swift in Sources */,
 			);
