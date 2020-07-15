@@ -40,12 +40,55 @@ class OrderDataVC: UIViewController {
         ConfirmBtnOutlet.addCornerRadius(6)
     }
     
-    //MARK:- Action's
-    @IBAction func confirmBtnAction(_ sender: Any) {
-        let vc = TrackOrderVC.instance()
-        self.navigationController?.pushViewController(vc, animated: true)
+    // MARK:- Data Validations
+    func isvalidData() -> Bool{
+        
+        if (FullNameTxtField.text!.isEmpty && MobileNumberTxtField.text!.isEmpty && OrderLocationTxtField.text!.isEmpty && MealCountTxtField.text!.isEmpty) {
+            self.showAlertWiring(title: "Please enter your order data")
+            return false
+        }
+        
+        if FullNameTxtField.text!.isEmpty {
+            self.showAlertWiring(title: "Please enter your FullName")
+            return false
+        }
+        
+        if FullNameTxtField.text!.count < 3{
+            self.showAlertWiring(title: "Please enter correct FullName")
+            return false
+        }
+        
+        if MobileNumberTxtField.text!.isEmpty {
+            self.showAlertWiring(title: "Please enter your MobileNumber")
+            return false
+        }
+        
+        if MobileNumberTxtField.text!.count < 11 {
+            self.showAlertWiring(title: "Please enter correct MobileNumber")
+            return false
+        }
+        
+        if OrderLocationTxtField.text!.isEmpty{
+            self.showAlertWiring(title: "Please enter order OrderLocation")
+            return false
+        }
+        
+        if MealCountTxtField.text!.isEmpty{
+            self.showAlertWiring(title: "Please enter your Meal Count ")
+            return false
+        }
+        
+        return true
     }
     
+    //MARK:- Action's
+    @IBAction func confirmBtnAction(_ sender: Any) {
+        if isvalidData() {
+            self.showAlertsuccess(title: "Your Order Created Successfully")
+            let vc = TrackOrderVC.instance()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
     
 }
 
