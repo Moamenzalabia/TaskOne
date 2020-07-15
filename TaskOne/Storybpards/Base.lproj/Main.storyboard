@@ -87,5 +87,40 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="82.33695652173914"/>
         </scene>
+        <!--TrackOrderVC-->
+        <scene sceneID="n3E-9j-J6T">
+            <objects>
+                <viewController storyboardIdentifier="TrackOrderVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="djh-SP-zjP" customClass="TrackOrderVC" customModule="TaskOne" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OXk-eb-QRz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="cJc-UJ-QMx"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="TrackOrderVC" id="XBo-YE-4TP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oqq-4R-JPU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1855.072463768116" y="82.33695652173914"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kYQ-qN-oUN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hfA-cV-b4l" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lzH-Rg-Wiv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="djh-SP-zjP" kind="relationship" relationship="rootViewController" id="dvW-d7-6vz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rpr-HF-970" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947.82608695652186" y="82.33695652173914"/>
+        </scene>
     </scenes>
 </document>
