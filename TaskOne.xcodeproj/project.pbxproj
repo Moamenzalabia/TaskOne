@@ -16,6 +16,12 @@
 		1C09336124BF488D00712FC2 /* OrderStatusCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C09335F24BF488D00712FC2 /* OrderStatusCVCell.swift */; };
 		1C09336224BF488D00712FC2 /* OrderStatusCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C09336024BF488D00712FC2 /* OrderStatusCVCell.xib */; };
 		1C5910E524C488CB009C91EC /* OrderDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5910E424C488CB009C91EC /* OrderDataModel.swift */; };
+		1C5910E924C4C7B9009C91EC /* HeaderOrderTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5910E724C4C7B9009C91EC /* HeaderOrderTVCell.swift */; };
+		1C5910EA24C4C7B9009C91EC /* HeaderOrderTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C5910E824C4C7B9009C91EC /* HeaderOrderTVCell.xib */; };
+		1C5910EE24C4C7F5009C91EC /* OrderStatusTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5910EC24C4C7F5009C91EC /* OrderStatusTVCell.swift */; };
+		1C5910EF24C4C7F5009C91EC /* OrderStatusTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C5910ED24C4C7F5009C91EC /* OrderStatusTVCell.xib */; };
+		1C5910F324C4C82C009C91EC /* OrderSummaryTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5910F124C4C82C009C91EC /* OrderSummaryTVCell.swift */; };
+		1C5910F424C4C82C009C91EC /* OrderSummaryTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C5910F224C4C82C009C91EC /* OrderSummaryTVCell.xib */; };
 		1C8890B624BDA8E30058F1A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8890B524BDA8E30058F1A0 /* AppDelegate.swift */; };
 		1C8890B824BDA8E30058F1A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8890B724BDA8E30058F1A0 /* SceneDelegate.swift */; };
 		1C8890BA24BDA8E30058F1A0 /* OrderDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8890B924BDA8E30058F1A0 /* OrderDataVC.swift */; };
@@ -35,6 +41,12 @@
 		1C09335F24BF488D00712FC2 /* OrderStatusCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatusCVCell.swift; sourceTree = "<group>"; };
 		1C09336024BF488D00712FC2 /* OrderStatusCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderStatusCVCell.xib; sourceTree = "<group>"; };
 		1C5910E424C488CB009C91EC /* OrderDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDataModel.swift; sourceTree = "<group>"; };
+		1C5910E724C4C7B9009C91EC /* HeaderOrderTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderOrderTVCell.swift; sourceTree = "<group>"; };
+		1C5910E824C4C7B9009C91EC /* HeaderOrderTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderOrderTVCell.xib; sourceTree = "<group>"; };
+		1C5910EC24C4C7F5009C91EC /* OrderStatusTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatusTVCell.swift; sourceTree = "<group>"; };
+		1C5910ED24C4C7F5009C91EC /* OrderStatusTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderStatusTVCell.xib; sourceTree = "<group>"; };
+		1C5910F124C4C82C009C91EC /* OrderSummaryTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSummaryTVCell.swift; sourceTree = "<group>"; };
+		1C5910F224C4C82C009C91EC /* OrderSummaryTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderSummaryTVCell.xib; sourceTree = "<group>"; };
 		1C8890B224BDA8E30058F1A0 /* TaskOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C8890B524BDA8E30058F1A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C8890B724BDA8E30058F1A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +75,9 @@
 		1C09335124BF3AD000712FC2 /* TrackOrderVC */ = {
 			isa = PBXGroup;
 			children = (
+				1C5910F024C4C800009C91EC /* OrderSummaryTVCell */,
+				1C5910EB24C4C7C2009C91EC /* OrderStatusTVCell */,
+				1C5910E624C4C794009C91EC /* HeaderOrderTVCell */,
 				1C09335E24BF485600712FC2 /* OrderStatusCVCell */,
 				1C09335224BF3AF400712FC2 /* TrackOrderVC.swift */,
 				1C09335424BF3B0F00712FC2 /* TrackOrderVC+Extensions.swift */,
@@ -85,6 +100,33 @@
 				1C5910E424C488CB009C91EC /* OrderDataModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1C5910E624C4C794009C91EC /* HeaderOrderTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				1C5910E724C4C7B9009C91EC /* HeaderOrderTVCell.swift */,
+				1C5910E824C4C7B9009C91EC /* HeaderOrderTVCell.xib */,
+			);
+			path = HeaderOrderTVCell;
+			sourceTree = "<group>";
+		};
+		1C5910EB24C4C7C2009C91EC /* OrderStatusTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				1C5910EC24C4C7F5009C91EC /* OrderStatusTVCell.swift */,
+				1C5910ED24C4C7F5009C91EC /* OrderStatusTVCell.xib */,
+			);
+			path = OrderStatusTVCell;
+			sourceTree = "<group>";
+		};
+		1C5910F024C4C800009C91EC /* OrderSummaryTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				1C5910F124C4C82C009C91EC /* OrderSummaryTVCell.swift */,
+				1C5910F224C4C82C009C91EC /* OrderSummaryTVCell.xib */,
+			);
+			path = OrderSummaryTVCell;
 			sourceTree = "<group>";
 		};
 		1C8890A924BDA8E30058F1A0 = {
@@ -244,7 +286,10 @@
 			files = (
 				1C8890C224BDA8E80058F1A0 /* LaunchScreen.storyboard in Resources */,
 				1C8890BF24BDA8E80058F1A0 /* Assets.xcassets in Resources */,
+				1C5910F424C4C82C009C91EC /* OrderSummaryTVCell.xib in Resources */,
+				1C5910EA24C4C7B9009C91EC /* HeaderOrderTVCell.xib in Resources */,
 				1C8890BD24BDA8E30058F1A0 /* Main.storyboard in Resources */,
+				1C5910EF24C4C7F5009C91EC /* OrderStatusTVCell.xib in Resources */,
 				1C09336224BF488D00712FC2 /* OrderStatusCVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,7 +343,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C5910EE24C4C7F5009C91EC /* OrderStatusTVCell.swift in Sources */,
 				1C09335924BF3BCB00712FC2 /* UICollectionView+Extensions.swift in Sources */,
+				1C5910E924C4C7B9009C91EC /* HeaderOrderTVCell.swift in Sources */,
+				1C5910F324C4C82C009C91EC /* OrderSummaryTVCell.swift in Sources */,
 				1C8890BA24BDA8E30058F1A0 /* OrderDataVC.swift in Sources */,
 				1C09335D24BF3D8D00712FC2 /* UIViewController.swift in Sources */,
 				1C8890B624BDA8E30058F1A0 /* AppDelegate.swift in Sources */,
