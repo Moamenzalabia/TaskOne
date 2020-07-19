@@ -11,9 +11,7 @@ import UIKit
 class TrackOrderVC: UIViewController {
     
     //MARK:- Outlet's
-    @IBOutlet weak var pageControl: UIPageControl!
-    @IBOutlet weak var productImageCV: UICollectionView!
-    @IBOutlet weak var orderStatusTextLbl: UILabel!
+    @IBOutlet weak var orderTV: UITableView!
     
     //MARK:- Propertie's
     var myOrderData: OrderDataModel?
@@ -31,7 +29,7 @@ class TrackOrderVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         NavigationBarClear()
-        setupCV()
+      //  setupCV()
         fullOrderData()
     }
     
@@ -46,30 +44,30 @@ class TrackOrderVC: UIViewController {
         self.myOrderData = OrderDataModel(orderTitle: "HungerStation", orderDiscrabtion: "Hunger Station Order is for test Task one", orderStatus: orderStatusArray, orderSummary: orderSummary, orderTime: "7:30 Pm", orderLocation: "Cairo, Egypt")
     }
     
-    func setupCV() {
-        productImageCV.delegate = self
-        productImageCV.dataSource = self
-        productImageCV.registerCellNib(cellClass: OrderStatusCVCell.self)
-        pageControl.numberOfPages = self.statusImgaeArray.count
-        DispatchQueue.main.async {
-            self.timer = Timer.scheduledTimer(timeInterval: 60.0, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
-        }
-    }
+//    func setupCV() {
+//        productImageCV.delegate = self
+//        productImageCV.dataSource = self
+//        productImageCV.registerCellNib(cellClass: OrderStatusCVCell.self)
+//        pageControl.numberOfPages = self.statusImgaeArray.count
+//        DispatchQueue.main.async {
+//            self.timer = Timer.scheduledTimer(timeInterval: 60.0, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
+//        }
+//    }
     
     //MARK:- Action's
-    @objc func changeImage() {
-        let imagesCount = self.statusImgaeArray.count
-        if counter < imagesCount {
-            self.pageControl.currentPage = counter
-            let index = IndexPath.init(item: counter, section: 0)
-            self.productImageCV.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
-            self.orderStatusTextLbl.text = self.statusTextArray[counter]
-            counter += 1
-            
-        } else {
-            self.navigationController?.popViewController(animated: true)
-        }
-    }
+//    @objc func changeImage() {
+//        let imagesCount = self.statusImgaeArray.count
+//        if counter < imagesCount {
+//            self.pageControl.currentPage = counter
+//            let index = IndexPath.init(item: counter, section: 0)
+//            self.productImageCV.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
+//            self.orderStatusTextLbl.text = self.statusTextArray[counter]
+//            counter += 1
+//
+//        } else {
+//            self.navigationController?.popViewController(animated: true)
+//        }
+//    }
     
     
 }

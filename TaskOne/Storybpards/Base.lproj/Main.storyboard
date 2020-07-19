@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jeP-G5-TOG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jeP-G5-TOG">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -102,7 +102,7 @@
         <!--TrackOrderVC-->
         <scene sceneID="n3E-9j-J6T">
             <objects>
-                <viewController storyboardIdentifier="TrackOrderVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="djh-SP-zjP" customClass="TrackOrderVC" customModule="TaskOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="djh-SP-zjP" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OXk-eb-QRz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,7 +116,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="250" id="ziX-ej-cZr"/>
                                         </constraints>
-                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="P6c-ZW-V7U" customClass="LocalizedCollectionView" customModule="أعلاف" customModuleProvider="target">
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="P6c-ZW-V7U" customClass="LocalizedCollectionView" customModule="TaskOne" customModuleProvider="target">
                                             <size key="itemSize" width="50" height="50"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -173,6 +173,37 @@
             </objects>
             <point key="canvasLocation" x="2762.3188405797105" y="82.33695652173914"/>
         </scene>
+        <!-- -->
+        <scene sceneID="FCh-Z7-kDe">
+            <objects>
+                <viewController storyboardIdentifier="TrackOrderVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UQZ-mr-XJN" customClass="TrackOrderVC" customModule="TaskOne" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="14x-sN-VnX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="twl-5b-DHm">
+                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="twl-5b-DHm" firstAttribute="top" secondItem="fde-uO-oFr" secondAttribute="top" id="LDg-fJ-qSk"/>
+                            <constraint firstItem="fde-uO-oFr" firstAttribute="trailing" secondItem="twl-5b-DHm" secondAttribute="trailing" id="W39-Gu-kmI"/>
+                            <constraint firstItem="twl-5b-DHm" firstAttribute="leading" secondItem="fde-uO-oFr" secondAttribute="leading" id="dp2-YI-vuy"/>
+                            <constraint firstItem="fde-uO-oFr" firstAttribute="bottom" secondItem="twl-5b-DHm" secondAttribute="bottom" id="qe6-Vn-JVs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fde-uO-oFr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title=" " id="2W2-iV-hYM"/>
+                    <connections>
+                        <outlet property="orderTV" destination="twl-5b-DHm" id="J2o-28-dGL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="URb-Ue-k2a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4573.913043478261" y="-188.31521739130437"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="kYQ-qN-oUN">
             <objects>
@@ -210,6 +241,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2hK-TN-hhO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="82.33695652173914"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K23-WM-HPB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CGB-z4-svS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lxd-b3-HF6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UQZ-mr-XJN" kind="relationship" relationship="rootViewController" id="Mdh-Aa-aFQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bP4-To-A6l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3666.666666666667" y="-188.31521739130437"/>
         </scene>
     </scenes>
 </document>
