@@ -16,6 +16,7 @@ class TrackOrderVC: UIViewController {
     @IBOutlet weak var orderStatusTextLbl: UILabel!
     
     //MARK:- Propertie's
+    var myOrderData: OrderDataModel?
     let statusImgaeArray = ["1", "2", "4", "3"]
     let statusTextArray = ["Your Order is under review", "Your Order Confirm With Phone Call", "Your Order under delivery", "Getting Your Order and Pay Cash"]
     var timer = Timer()
@@ -31,9 +32,20 @@ class TrackOrderVC: UIViewController {
         super.viewDidLoad()
         NavigationBarClear()
         setupCV()
+        fullOrderData()
     }
     
     //MARK:- Helper's
+    func fullOrderData() {
+        
+        let orderStatusArray = ["Order has been submitted", "Order has been prepared", "Your order is on the way"]
+        var orderSummary = [OrderSummaryModel]()
+        orderSummary.append(OrderSummaryModel(summaryTitle: "Whopper Combo", summaryDiscrabtion: "Cheese, Cola Upsize", summarySize: "1x", summaryHeight: "24.0 SM"))
+        orderSummary.append(OrderSummaryModel(summaryTitle: "Regular fries", summaryDiscrabtion: "Add Cheese", summarySize: "2x", summaryHeight: "16.0 SM"))
+        
+        self.myOrderData = OrderDataModel(orderTitle: "HungerStation", orderDiscrabtion: "Hunger Station Order is for test Task one", orderStatus: orderStatusArray, orderSummary: orderSummary, orderTime: "7:30 Pm", orderLocation: "Cairo, Egypt")
+    }
+    
     func setupCV() {
         productImageCV.delegate = self
         productImageCV.dataSource = self

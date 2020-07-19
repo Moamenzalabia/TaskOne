@@ -12,12 +12,12 @@ struct OrderDataModel {
     
     var orderTitle: String?
     var orderDiscrabtion: String?
-    var orderStatus: String?
-    var orderSummary: OrderSummaryModel?
+    var orderStatus: [String]?
+    var orderSummary: [OrderSummaryModel]?
     var orderTime: String?
     var orderLocation: String?
     
-    init(orderTitle: String, orderDiscrabtion: String, orderStatus: String, orderSummary: OrderSummaryModel, orderTime: String, orderLocation: String) {
+    init(orderTitle: String, orderDiscrabtion: String, orderStatus: [String], orderSummary: [OrderSummaryModel], orderTime: String, orderLocation: String) {
         self.orderTitle = orderTitle
         self.orderDiscrabtion = orderDiscrabtion
         self.orderStatus = orderStatus
@@ -31,17 +31,15 @@ struct OrderDataModel {
 struct OrderSummaryModel {
     
     var summaryTitle: String?
-    var summaryId: String?
     var summaryDiscrabtion: String?
     var summarySize: String?
     var summaryHeight: String?
     
-    init(summaryTitle: String, summaryDiscrabtion: String, summarySize: String, summaryHeight: String, summaryId: String) {
+    init(summaryTitle: String, summaryDiscrabtion: String, summarySize: String, summaryHeight: String) {
         self.summaryTitle = summaryTitle
         self.summaryDiscrabtion = summaryDiscrabtion
         self.summarySize = summarySize
         self.summaryHeight = summaryHeight
-        self.summaryId = summaryId
     }
     
 }
