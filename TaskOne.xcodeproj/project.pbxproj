@@ -24,8 +24,6 @@
 		1C5910F424C4C82C009C91EC /* OrderSummaryTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C5910F224C4C82C009C91EC /* OrderSummaryTVCell.xib */; };
 		1C5910F824C4C8F7009C91EC /* OrderSummaryDataTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5910F624C4C8F7009C91EC /* OrderSummaryDataTVCell.swift */; };
 		1C5910F924C4C8F7009C91EC /* OrderSummaryDataTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C5910F724C4C8F7009C91EC /* OrderSummaryDataTVCell.xib */; };
-		1C5910FD24C4C925009C91EC /* OrderStatusDataTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5910FB24C4C925009C91EC /* OrderStatusDataTVCell.swift */; };
-		1C5910FE24C4C925009C91EC /* OrderStatusDataTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C5910FC24C4C925009C91EC /* OrderStatusDataTVCell.xib */; };
 		1C8890B624BDA8E30058F1A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8890B524BDA8E30058F1A0 /* AppDelegate.swift */; };
 		1C8890B824BDA8E30058F1A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8890B724BDA8E30058F1A0 /* SceneDelegate.swift */; };
 		1C8890BA24BDA8E30058F1A0 /* OrderDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8890B924BDA8E30058F1A0 /* OrderDataVC.swift */; };
@@ -53,8 +51,6 @@
 		1C5910F224C4C82C009C91EC /* OrderSummaryTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderSummaryTVCell.xib; sourceTree = "<group>"; };
 		1C5910F624C4C8F7009C91EC /* OrderSummaryDataTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSummaryDataTVCell.swift; sourceTree = "<group>"; };
 		1C5910F724C4C8F7009C91EC /* OrderSummaryDataTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderSummaryDataTVCell.xib; sourceTree = "<group>"; };
-		1C5910FB24C4C925009C91EC /* OrderStatusDataTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatusDataTVCell.swift; sourceTree = "<group>"; };
-		1C5910FC24C4C925009C91EC /* OrderStatusDataTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderStatusDataTVCell.xib; sourceTree = "<group>"; };
 		1C8890B224BDA8E30058F1A0 /* TaskOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C8890B524BDA8E30058F1A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C8890B724BDA8E30058F1A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,7 +118,6 @@
 		1C5910EB24C4C7C2009C91EC /* OrderStatusTVCell */ = {
 			isa = PBXGroup;
 			children = (
-				1C5910FA24C4C90D009C91EC /* OrderStatusDataTVCell */,
 				1C5910EC24C4C7F5009C91EC /* OrderStatusTVCell.swift */,
 				1C5910ED24C4C7F5009C91EC /* OrderStatusTVCell.xib */,
 			);
@@ -146,15 +141,6 @@
 				1C5910F724C4C8F7009C91EC /* OrderSummaryDataTVCell.xib */,
 			);
 			path = OrderSummaryDataTVCell;
-			sourceTree = "<group>";
-		};
-		1C5910FA24C4C90D009C91EC /* OrderStatusDataTVCell */ = {
-			isa = PBXGroup;
-			children = (
-				1C5910FB24C4C925009C91EC /* OrderStatusDataTVCell.swift */,
-				1C5910FC24C4C925009C91EC /* OrderStatusDataTVCell.xib */,
-			);
-			path = OrderStatusDataTVCell;
 			sourceTree = "<group>";
 		};
 		1C8890A924BDA8E30058F1A0 = {
@@ -317,7 +303,6 @@
 				1C8890BF24BDA8E80058F1A0 /* Assets.xcassets in Resources */,
 				1C5910F424C4C82C009C91EC /* OrderSummaryTVCell.xib in Resources */,
 				1C5910EA24C4C7B9009C91EC /* HeaderOrderTVCell.xib in Resources */,
-				1C5910FE24C4C925009C91EC /* OrderStatusDataTVCell.xib in Resources */,
 				1C8890BD24BDA8E30058F1A0 /* Main.storyboard in Resources */,
 				1C5910EF24C4C7F5009C91EC /* OrderStatusTVCell.xib in Resources */,
 				1C09336224BF488D00712FC2 /* OrderStatusCVCell.xib in Resources */,
@@ -383,7 +368,6 @@
 				1C09335524BF3B0F00712FC2 /* TrackOrderVC+Extensions.swift in Sources */,
 				1C8890B824BDA8E30058F1A0 /* SceneDelegate.swift in Sources */,
 				1C09335324BF3AF400712FC2 /* TrackOrderVC.swift in Sources */,
-				1C5910FD24C4C925009C91EC /* OrderStatusDataTVCell.swift in Sources */,
 				1C5910E524C488CB009C91EC /* OrderDataModel.swift in Sources */,
 				1C09336124BF488D00712FC2 /* OrderStatusCVCell.swift in Sources */,
 				1C09335724BF3BB000712FC2 /* UITableView+Extension.swift in Sources */,

@@ -9,16 +9,26 @@
 import UIKit
 
 class OrderSummaryDataTVCell: UITableViewCell {
-
+    
+    //MARK:- Outlet's
+    @IBOutlet weak var summaryTitleLbl: UILabel!
+    @IBOutlet weak var summarySizeLbl: UILabel!
+    @IBOutlet weak var summaryHeightLbl: UILabel!
+    @IBOutlet weak var summaryDiscLbl: UILabel!
+    
+    //MARK:- Propertie's
+    var dataModel: OrderSummaryModel? {
+        didSet {
+            self.summaryTitleLbl.text = dataModel?.summaryTitle
+            self.summaryDiscLbl.text = dataModel?.summaryDiscrabtion
+            self.summarySizeLbl.text = dataModel?.summarySize
+            self.summaryHeightLbl.text = dataModel?.summaryHeight
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    }    
     
 }

@@ -9,16 +9,28 @@
 import UIKit
 
 class HeaderOrderTVCell: UITableViewCell {
-
+    
+    //MARK:- Outlet's
+    @IBOutlet weak var brandView: UIView!
+    @IBOutlet weak var orderTitle: UILabel!
+    @IBOutlet weak var locationLbl: UILabel!
+    @IBOutlet weak var orderTimeLbl: UILabel!
+    @IBOutlet weak var orderDeliveryLbl: UILabel!
+    
+    //MARK:- Propertie's
+    var dataModel: OrderDataModel? {
+        didSet {
+            self.orderTitle.text = dataModel?.orderTitle
+            self.locationLbl.text = dataModel?.orderLocation
+            self.orderTimeLbl.text = dataModel?.orderTime
+            self.orderDeliveryLbl.text = dataModel?.orderDiscrabtion
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.brandView.addCornerRadius(6)
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    
     
 }

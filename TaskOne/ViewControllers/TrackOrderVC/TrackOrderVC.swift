@@ -29,7 +29,7 @@ class TrackOrderVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         NavigationBarClear()
-      //  setupCV()
+        setupTV()
         fullOrderData()
     }
     
@@ -41,33 +41,35 @@ class TrackOrderVC: UIViewController {
         orderSummary.append(OrderSummaryModel(summaryTitle: "Whopper Combo", summaryDiscrabtion: "Cheese, Cola Upsize", summarySize: "1x", summaryHeight: "24.0 SM"))
         orderSummary.append(OrderSummaryModel(summaryTitle: "Regular fries", summaryDiscrabtion: "Add Cheese", summarySize: "2x", summaryHeight: "16.0 SM"))
         
-        self.myOrderData = OrderDataModel(orderTitle: "HungerStation", orderDiscrabtion: "Hunger Station Order is for test Task one", orderStatus: orderStatusArray, orderSummary: orderSummary, orderTime: "7:30 Pm", orderLocation: "Cairo, Egypt")
+        self.myOrderData = OrderDataModel(orderTitle: "HungerStation", orderDiscrabtion: "The Faster", orderStatus: orderStatusArray, orderSummary: orderSummary, orderTime: "7:30 Pm", orderLocation: "Cairo, Egypt")
     }
     
-//    func setupCV() {
-//        productImageCV.delegate = self
-//        productImageCV.dataSource = self
-//        productImageCV.registerCellNib(cellClass: OrderStatusCVCell.self)
-//        pageControl.numberOfPages = self.statusImgaeArray.count
-//        DispatchQueue.main.async {
-//            self.timer = Timer.scheduledTimer(timeInterval: 60.0, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
-//        }
-//    }
+    func setupTV() {
+        orderTV.delegate = self
+        orderTV.dataSource = self
+        orderTV.registerCellNib(cellClass: HeaderOrderTVCell.self)
+        orderTV.registerCellNib(cellClass: OrderStatusTVCell.self)
+        orderTV.registerCellNib(cellClass: OrderSummaryTVCell.self)
+        //        pageControl.numberOfPages = self.statusImgaeArray.count
+        //        DispatchQueue.main.async {
+        //            self.timer = Timer.scheduledTimer(timeInterval: 60.0, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
+        //        }
+    }
     
     //MARK:- Action's
-//    @objc func changeImage() {
-//        let imagesCount = self.statusImgaeArray.count
-//        if counter < imagesCount {
-//            self.pageControl.currentPage = counter
-//            let index = IndexPath.init(item: counter, section: 0)
-//            self.productImageCV.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
-//            self.orderStatusTextLbl.text = self.statusTextArray[counter]
-//            counter += 1
-//
-//        } else {
-//            self.navigationController?.popViewController(animated: true)
-//        }
-//    }
+    //    @objc func changeImage() {
+    //        let imagesCount = self.statusImgaeArray.count
+    //        if counter < imagesCount {
+    //            self.pageControl.currentPage = counter
+    //            let index = IndexPath.init(item: counter, section: 0)
+    //            self.productImageCV.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
+    //            self.orderStatusTextLbl.text = self.statusTextArray[counter]
+    //            counter += 1
+    //
+    //        } else {
+    //            self.navigationController?.popViewController(animated: true)
+    //        }
+    //    }
     
     
 }
