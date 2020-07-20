@@ -60,8 +60,6 @@ class OrderStatusTVCell: UITableViewCell {
                 self.thirdStatusImg.image = UIImage(named: "5")
             }
             counter += 1
-        } else {
-            TrackOrderVC.shared.navigationController?.popViewController(animated: true)
         }
     }
     
