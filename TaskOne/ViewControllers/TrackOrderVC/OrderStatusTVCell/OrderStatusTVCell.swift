@@ -58,10 +58,10 @@ class OrderStatusTVCell: UITableViewCell {
             } else if counter == 2 {
                 self.thirdStatusTitleLbl.textColor = .black
                 self.thirdStatusImg.image = UIImage(named: "5")
-            }else {
-                TrackOrderVC.shared.navigationController?.popViewController(animated: true)
             }
             counter += 1
+        } else {
+            TrackOrderVC.shared.navigationController?.popViewController(animated: true)
         }
     }
     

@@ -13,8 +13,6 @@
 		1C09335924BF3BCB00712FC2 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C09335824BF3BCB00712FC2 /* UICollectionView+Extensions.swift */; };
 		1C09335B24BF3BFC00712FC2 /* UIView+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C09335A24BF3BFC00712FC2 /* UIView+Extentions.swift */; };
 		1C09335D24BF3D8D00712FC2 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C09335C24BF3D8D00712FC2 /* UIViewController.swift */; };
-		1C09336124BF488D00712FC2 /* OrderStatusCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C09335F24BF488D00712FC2 /* OrderStatusCVCell.swift */; };
-		1C09336224BF488D00712FC2 /* OrderStatusCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C09336024BF488D00712FC2 /* OrderStatusCVCell.xib */; };
 		1C5910E524C488CB009C91EC /* OrderDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5910E424C488CB009C91EC /* OrderDataModel.swift */; };
 		1C5910E924C4C7B9009C91EC /* HeaderOrderTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5910E724C4C7B9009C91EC /* HeaderOrderTVCell.swift */; };
 		1C5910EA24C4C7B9009C91EC /* HeaderOrderTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C5910E824C4C7B9009C91EC /* HeaderOrderTVCell.xib */; };
@@ -40,8 +38,6 @@
 		1C09335824BF3BCB00712FC2 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		1C09335A24BF3BFC00712FC2 /* UIView+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extentions.swift"; sourceTree = "<group>"; };
 		1C09335C24BF3D8D00712FC2 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
-		1C09335F24BF488D00712FC2 /* OrderStatusCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatusCVCell.swift; sourceTree = "<group>"; };
-		1C09336024BF488D00712FC2 /* OrderStatusCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderStatusCVCell.xib; sourceTree = "<group>"; };
 		1C5910E424C488CB009C91EC /* OrderDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDataModel.swift; sourceTree = "<group>"; };
 		1C5910E724C4C7B9009C91EC /* HeaderOrderTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderOrderTVCell.swift; sourceTree = "<group>"; };
 		1C5910E824C4C7B9009C91EC /* HeaderOrderTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderOrderTVCell.xib; sourceTree = "<group>"; };
@@ -82,20 +78,10 @@
 				1C5910F024C4C800009C91EC /* OrderSummaryTVCell */,
 				1C5910EB24C4C7C2009C91EC /* OrderStatusTVCell */,
 				1C5910E624C4C794009C91EC /* HeaderOrderTVCell */,
-				1C09335E24BF485600712FC2 /* OrderStatusCVCell */,
 				1C09335224BF3AF400712FC2 /* TrackOrderVC.swift */,
 				1C09335424BF3B0F00712FC2 /* TrackOrderVC+Extensions.swift */,
 			);
 			path = TrackOrderVC;
-			sourceTree = "<group>";
-		};
-		1C09335E24BF485600712FC2 /* OrderStatusCVCell */ = {
-			isa = PBXGroup;
-			children = (
-				1C09335F24BF488D00712FC2 /* OrderStatusCVCell.swift */,
-				1C09336024BF488D00712FC2 /* OrderStatusCVCell.xib */,
-			);
-			path = OrderStatusCVCell;
 			sourceTree = "<group>";
 		};
 		1C5910E324C488AC009C91EC /* Model */ = {
@@ -305,7 +291,6 @@
 				1C5910EA24C4C7B9009C91EC /* HeaderOrderTVCell.xib in Resources */,
 				1C8890BD24BDA8E30058F1A0 /* Main.storyboard in Resources */,
 				1C5910EF24C4C7F5009C91EC /* OrderStatusTVCell.xib in Resources */,
-				1C09336224BF488D00712FC2 /* OrderStatusCVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +354,6 @@
 				1C8890B824BDA8E30058F1A0 /* SceneDelegate.swift in Sources */,
 				1C09335324BF3AF400712FC2 /* TrackOrderVC.swift in Sources */,
 				1C5910E524C488CB009C91EC /* OrderDataModel.swift in Sources */,
-				1C09336124BF488D00712FC2 /* OrderStatusCVCell.swift in Sources */,
 				1C09335724BF3BB000712FC2 /* UITableView+Extension.swift in Sources */,
 				1C09335B24BF3BFC00712FC2 /* UIView+Extentions.swift in Sources */,
 				1C5910F824C4C8F7009C91EC /* OrderSummaryDataTVCell.swift in Sources */,

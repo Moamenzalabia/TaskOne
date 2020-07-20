@@ -31,6 +31,13 @@ class OrderDataVC: UIViewController {
         setUpUi()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        FullNameTxtField.text = ""
+        MobileNumberTxtField.text = ""
+        OrderLocationTxtField.text = ""
+        MealCountTxtField.text = ""
+    }
+    
     //MARK:- Helper's
     func setUpUi(){
         FullNameTxtField.addCornerRadius(6)
