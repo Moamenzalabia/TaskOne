@@ -10,7 +10,6 @@ import UIKit
 
 extension TrackOrderVC: UITableViewDelegate, UITableViewDataSource {
     
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
@@ -23,6 +22,7 @@ extension TrackOrderVC: UITableViewDelegate, UITableViewDataSource {
             return cell
         } else if indexPath.row == 1 {
             let cell = tableView.dequeue() as OrderStatusTVCell
+            cell.statusArray = self.myOrderData?.orderStatus
             return cell
         }else {
             let cell = tableView.dequeue() as OrderSummaryTVCell
@@ -31,13 +31,11 @@ extension TrackOrderVC: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-           if indexPath.row == 2 {
-               return (CGFloat((65 * 2) + 140))
-           }else {
-               return UITableView.automaticDimension
-           }
-       }
-    
+        if indexPath.row == 2 {
+            return (CGFloat((65 * 2) + 140))
+        }else {
+            return UITableView.automaticDimension
+        }
+    }
 }

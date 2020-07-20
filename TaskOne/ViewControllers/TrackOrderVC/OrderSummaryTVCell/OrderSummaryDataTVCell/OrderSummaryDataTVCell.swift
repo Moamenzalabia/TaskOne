@@ -28,7 +28,7 @@ class OrderSummaryDataTVCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-
+        
     }    
     
 }

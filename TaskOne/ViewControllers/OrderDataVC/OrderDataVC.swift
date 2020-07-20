@@ -83,12 +83,11 @@ class OrderDataVC: UIViewController {
     
     //MARK:- Action's
     @IBAction func confirmBtnAction(_ sender: Any) {
-        //if isvalidData() {
+        if isvalidData() {
             self.showAlertsuccess(title: "Your Order Created Successfully")
-            let vc = TrackOrderVC.instance()
+            let vc = TrackOrderVC.instance(orderTitle: self.FullNameTxtField.text ?? "", orderLocation: self.OrderLocationTxtField.text ?? "")
             self.navigationController?.pushViewController(vc, animated: true)
-        //}
+        }
     }
-    
 }
 

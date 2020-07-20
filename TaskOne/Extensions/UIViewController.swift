@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftMessages
+import ViewAnimator
 
 extension UIViewController {
     
@@ -95,4 +96,16 @@ extension UIViewController {
         SwiftMessages.show(config: config, view: msgView)
     }
     
+    func animateTVHome(tableView: UITableView) {
+        let fromAnimation = AnimationType.from(direction: .right, offset: 30.0)
+        let zoomAnimation = AnimationType.zoom(scale: 0.2)
+        UIView.animate(views: tableView.visibleCells,
+                       animations: [fromAnimation, zoomAnimation], delay: 0.2)
+    }
+    
+    func animateTVList(tableView: UITableView) {
+        let animations = [AnimationType.from(direction: .bottom, offset: 30.0)]
+        UIView.animate(views: tableView.visibleCells, animations: animations, completion: {
+        })
+    }
 }
